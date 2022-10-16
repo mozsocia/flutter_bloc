@@ -78,7 +78,8 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: BlocBuilder<CounterBlocs, CounterStates>(builder: (context, state) {
+      body: BlocBuilder<CounterBlocs, CounterStates>(
+        builder: (context, state) {
         return Column(
           //crossAxisAlignment: CrossAxisAlignment.center,
           // mainAxisAlignment: MainAxisAlignment.center,
