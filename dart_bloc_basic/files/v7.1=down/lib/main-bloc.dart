@@ -1,4 +1,3 @@
-```dart
 import 'package:bloc/bloc.dart';
 
 enum CounterEvent { increment, decrement }
@@ -20,8 +19,6 @@ class CounterBloc extends Bloc<CounterEvent, int> {
   }
 }
 
-
-
 Future<void> main(List<String> args) async {
   final bloc = CounterBloc();
 
@@ -41,5 +38,3 @@ Future<void> main(List<String> args) async {
   await streamSubscription.cancel();
   await bloc.close();
 }
-
-```
